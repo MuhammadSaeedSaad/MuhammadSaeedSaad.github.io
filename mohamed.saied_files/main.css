@@ -2,7 +2,7 @@
  * cascading style sheet for mohamedsaied.com
  ***************************************************************/
 
-#header, #body, #footer, #toc {
+.header, .body, .footer, .toc {
     border:             2px dashed #333;
     background-color:   #eee;
     color:              #000;
@@ -10,7 +10,7 @@
     padding:            1em;
 }
 
-#footer {
+.footer {
     text-align:         center;
 }
 

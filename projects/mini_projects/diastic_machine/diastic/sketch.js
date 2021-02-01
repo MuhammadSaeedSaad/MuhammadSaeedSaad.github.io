@@ -31,7 +31,13 @@ function setup() {
   var submit = select("#submit");
   // handling the clicking on the button event using a javascript anonymous function
   submit.mousePressed(function (){
-    let phrase = diastic(seed.value(), words);
-    createP(phrase);
+    phrase = diastic(seed.value(), words);
+    let paragraph = document.createElement("p");
+    paragraph.className = "body";
+    let phrase_text = document.createTextNode(phrase);
+    console.log(typeof(phrase_text));
+    paragraph.appendChild(phrase_text);
+    let targetDiv = document.getElementById("bodydiv");
+    targetDiv.appendChild(paragraph);
   });
 }
